@@ -18,7 +18,8 @@
       "price": "4.99",
       "stock": "10",
       "shortDesc": "Shirt with a Cat on it",
-      "description": "Pink shirt with a purple cat"
+      "description": "Pink shirt with a purple cat",
+      "image": "public/assets/Ivegotagoodheart.jpg"
     },
     {
       "id": "px62ietooitkjy9c90o",
@@ -26,7 +27,8 @@
       "price": "4.99",
       "stock": "10",
       "shortDesc": "Shirt with a dog on it",
-      "description": "Blue shirt with a brown dog"
+      "description": "Blue shirt with a brown dog",
+      "image": "public/assets/Ivegotagoodheart.jpg"
     },
     {
       "id": "p2zg1o0j61nkjy9l7fy",
@@ -34,7 +36,8 @@
       "price": "4.99",
       "stock": "10",
       "shortDesc": "Shirt with a Hamster on it",
-      "description": "Green shirt with a yellow hamster"
+      "description": "Green shirt with a yellow hamster",
+      "image": "public/assets/Ivegotagoodheart.jpg"
     },
     {
       "id": "h4x3o1igmbpkjywu5rh",
@@ -42,7 +45,8 @@
       "price": "9.99",
       "stock": "10",
       "shortDesc": "Loads of Love Special Delivery Shirt",
-      "description": "Loads of Love Special Delivery Shirt"
+      "description": "Loads of Love Special Delivery Shirt",
+      "image": "public/assets/Ivegotagoodheart.jpg"
     },
     {
       "id": "xghjt24z8qckjyx3sax",
@@ -50,7 +54,35 @@
       "price": "9.99",
       "stock": "10",
       "shortDesc": "Pink Cat Shirt",
-      "description": "Pink Cat Shirt with yellow paws"
+      "description": "Pink Cat Shirt with yellow paws",
+      "image": "public/assets/Ivegotagoodheart.jpg"
+    },
+    {
+      "id": "a3druim0cygkjyx8u4s",
+      "name": "Dog Shirt",
+      "price": "9.99",
+      "stock": "10",
+      "shortDesc": "Dog Shirt",
+      "description": "White Dog Shirt with Green Pockets",
+      "image": "public/assets/Ivegotagoodheart.jpg"
+    },
+    {
+      "id": "eoong6fdvqckk1f7416",
+      "name": "New Product",
+      "price": ".99",
+      "stock": "1",
+      "shortDesc": "new product",
+      "description": "new product",
+      "image": "C:\\fakepath\\llamadrama.jpg"
+    },
+    {
+      "id": "09516pdszavrkk1fbtqr",
+      "name": "Test Product",
+      "price": "9.99",
+      "stock": "1",
+      "shortDesc": "Test Product",
+      "description": "Test Product",
+      "image": "C:\\fakepath\\fridaynightstadium.jpg"
     }
   ]
 }

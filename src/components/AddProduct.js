@@ -8,7 +8,8 @@ const initState = {
   price: "",
   stock: "",
   shortDesc: "",
-  description: ""
+  description: "",
+  image: "",
 };
 
 class AddProduct extends Component {
@@ -19,14 +20,14 @@ class AddProduct extends Component {
 
   save = async (e) => {
     e.preventDefault();
-    const { name, price, stock, shortDesc, description } = this.state;
+    const { name, price, stock, shortDesc, description, image } = this.state;
 
     if (name && price) {
       const id = Math.random().toString(36).substring(2) + Date.now().toString(36);
 
       await axios.post(
         'http://localhost:3001/products',
-        { id, name, price, stock, shortDesc, description },
+        { id, name, price, stock, shortDesc, description, image },
       )
 
       this.props.context.addProduct(
@@ -35,7 +36,8 @@ class AddProduct extends Component {
           price,
           shortDesc,
           description,
-          stock: stock || 0
+          stock: stock || 0,
+          image
         },
         () => this.setState(initState)
       );
@@ -53,14 +55,14 @@ class AddProduct extends Component {
   handleChange = e => this.setState({ [e.target.name]: e.target.value, error: "" });
 
   render() {
-    const { name, price, stock, shortDesc, description } = this.state;
+    const { name, price, stock, shortDesc, description, image } = this.state;
     const { user } = this.props.context;
 
     return !(user && user.accessLevel < 1) ? (
       <Redirect to="/" />
     ) : (
       <>
-        <div className="hero is-primary ">
+        <div className="hero is-info ">
           <div className="hero-body container">
             <h4 className="title">Add Product</h4>
           </div>
@@ -123,6 +125,16 @@ class AddProduct extends Component {
                   value={description}
                   onChange={this.handleChange}
                 />
+              <div className="field">
+                <label className="label">Upload Image: </label>
+                <input
+                  className="input"
+                  type="file"
+                  name="image"
+                  value={image}
+                  onChange={this.handleChange}
+                />
+              </div>
               </div>
               {this.state.flash && (
                 <div className={`notification ${this.state.flash.status}`}>
@@ -131,7 +143,7 @@ class AddProduct extends Component {
               )}
               <div className="field is-clearfix">
                 <button
-                  className="button is-primary is-outlined is-pulled-right"
+                  className="button is-info is-outlined is-pulled-right"
                   type="submit"
                   onClick={this.save}
                 >

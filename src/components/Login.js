@@ -31,7 +31,7 @@ class Login extends Component {
   render() {
     return !this.props.context.user ? (
       <>
-        <div className="hero is-primary ">
+        <div className="hero is-info ">
           <div className="hero-body container">
             <h4 className="title">Login</h4>
           </div>
@@ -64,7 +64,7 @@ class Login extends Component {
               )}
               <div className="field is-clearfix">
                 <button
-                  className="button is-primary is-outlined is-pulled-right"
+                  className="button is-info is-outlined is-pulled-right"
                 >
                   Submit
                 </button>

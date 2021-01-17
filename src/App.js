@@ -143,7 +143,7 @@ export default class App extends Component {
               <b className="navbar-item is-size-4 ">Beyond Sunshine Designs</b>
               <label
                 role="button"
-                class="navbar-burger burger"
+                class="navbar-burger burger" 
                 aria-label="menu"
                 aria-expanded="false"
                 data-target="navbarBasicExample"
@@ -171,7 +171,7 @@ export default class App extends Component {
                 <Link to="/cart" className="navbar-item">
                   Cart
                   <span
-                    className="tag is-primary"
+                    className="tag is-info"
                     style={{ marginLeft: "5px" }}
                   >
                     { Object.keys(this.state.cart).length }
